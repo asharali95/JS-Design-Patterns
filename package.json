@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "factoryPatternTranspile": "@babel ./Factory-Pattern/factoryIndex.js ./Factory-Pattern/factoryPattern.js --out-dir ./output/",
-    "startFactory": "yarn run factoryPatternTranspile && node ./output/factoryIndex.js "
+    "singletonPatternTranspile": "@babel ./Singleton-Pattern/singletonIndex.js ./Singleton-Pattern/singletonPattern.js --out-dir ./output/",
+    "startFactory": "yarn run factoryPatternTranspile && node ./output/factoryIndex.js ",
+    "startSingleton": "yarn run singletonPatternTranspile && node ./output/singletonIndex.js"
   },
   "dependencies": {
     "@babel/cli": "^7.16.0",
