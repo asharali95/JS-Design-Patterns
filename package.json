@@ -6,8 +6,10 @@
   "scripts": {
     "factoryPatternTranspile": "@babel ./Factory-Pattern/factoryIndex.js ./Factory-Pattern/factoryPattern.js --out-dir ./output/",
     "singletonPatternTranspile": "@babel ./Singleton-Pattern/singletonIndex.js ./Singleton-Pattern/singletonPattern.js --out-dir ./output/",
+    "strategyPatternTranspile": "@babel ./Strategy-Pattern/strategyPattern.js ./Strategy-Pattern/strategyPatternIndex.js --out-dir ./output/",
     "startFactory": "yarn run factoryPatternTranspile && node ./output/factoryIndex.js ",
-    "startSingleton": "yarn run singletonPatternTranspile && node ./output/singletonIndex.js"
+    "startSingleton": "yarn run singletonPatternTranspile && node ./output/singletonIndex.js",
+    "startStrategy": "yarn run strategyPatternTranspile && node ./output/strategyPatternIndex.js"
   },
   "dependencies": {
     "@babel/cli": "^7.16.0",
